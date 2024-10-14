@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(227, 227, 228);
+}
+
+p {
+  padding:10px;
+  background-color: rgb(92, 94, 91);
+}
+
+.green {
+  background-color:rgb(3, 144, 39)
+}
