@@ -1,10 +1,10 @@
-
-
-#Profile {
- background-color: rgb(165, 165, 165);
- padding: 20px;
+body {
+  margin: 40px;
 }
 
-#fruits {
-  background-color: blanchedalmond;
+section {
+  margin-bottom: 30px;
+}
+button {
+  margin-bottom: 10px;
 }
