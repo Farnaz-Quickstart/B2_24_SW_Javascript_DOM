@@ -1,6 +1,5 @@
 
 function handleClickByID() {
-
   // Selecting Element: getElementById
   let elementInput = document.getElementById("profile")
   elementInput.style.backgroundColor = "red"

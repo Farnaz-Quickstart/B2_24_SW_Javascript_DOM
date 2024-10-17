@@ -2,35 +2,44 @@
 // Reference: https://www.w3schools.com/js/js_htmldom_document.asp
 
 function handleClick_changeList_bytextContent() {
-  let elementItems = document.getElementsByClassName("list-group-item")
-  for (i = 0 ; i < elementItems.length; i++) {
-    elementItems[i].textContent = `Quickstart Day ${i}`
+  let listItems = document.getElementsByClassName("list-group-item")
+  for (let i = 0 ; i < listItems.length; i++ ) {
+    listItems[i].textContent = `This is Quickstart ${i}`
   }
 }
 
-function handleClick_changeList_byInnerHtml() {
-  let elementItems = document.getElementsByClassName("list-group-item")
-  for (i = 0 ; i < elementItems.length; i++) {
-    elementItems[i].innerHTML = `<p><strong>This is our class 😁 </strong><em>How are you</em></p>`
+function handleClick_changeList_byinnerHtml() {
+  let listItems = document.getElementsByClassName("list-group-item")
+  for (let i = 0 ; i < listItems.length; i++ ) {
+    listItems[i].innerHTML = `This is our <strong>Class</strong> <span style="color:red">test</span>`
   }
 }
 
-function functionhandleClick_checkCheckbox () {
-  let elementItems = document.getElementsByName("fav_language")
-  console.log (elementItems)
-  elementItems.forEach((element) => {
-    if (element.value =="backend" ) 
-      element.checked = "checked"
-  })
+function handleClick_change_radioList () {
+  let listItems = document.getElementsByName ("fav_language")
+  for (let i =0 ; i < listItems.length; i++) {
+    if (listItems[i].value == "backend") {
+      listItems[i].checked = "true"
+    }  
+  } 
 }
 
-
-function functionhandleClick_changeImage () {
-  document.getElementById ("img_profile").src = "https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367_640.jpg"
+function handleClick_changeImage() {
+  let img_element = document.getElementsByTagName ("img")
+  console.log (img_element)
+  img_element[2].src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBHXsWT_vl7zFE8VgeWeGg1XKiH2N1Mv_pYA&s" 
 }
-function handleClick_changeStyle () {
+
+function handleClick_changeStyle() {
+  let heading_element = document.getElementsByTagName ("h2")
+  for (let i =0 ; i < heading_element.length ; i++ ) {
+    if  (i < 2) {
+        heading_element[i].style.color="red"
+    }
+  }
 
 }
+
 
 
 
