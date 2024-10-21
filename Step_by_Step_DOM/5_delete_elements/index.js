@@ -8,10 +8,19 @@ function addElements() {
   document.getElementById('section_image').appendChild(element1)
 }
 
+function deleteElements () {
+  let image_elements = document.getElementsByTagName ("img")
+  for (let i = image_elements.length ; i > 0 ;i--) {
+    image_elements[0].remove();
+  }
 
-function deleteElements() {
-  let elementsItms = document.getElementsByClassName("img_profile")
-  elementsItms.item(0).remove()
+  // for (let i = 0 ; i <  image_elements.length ;i++) {
+  //   image_elements[i].remove();
+  // }
 }
+
+
+
+
 
 
